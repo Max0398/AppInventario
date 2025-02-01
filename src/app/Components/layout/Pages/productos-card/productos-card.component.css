@@ -3,8 +3,9 @@ mat-card-header {
   justify-content: center;
 }
 
-.Product-card {
-  max-width: 400px;
+mat-card {
+  max-width: 300px;
+  max-height: 450px;
 }
 /*
 .Product-card {
@@ -20,11 +21,12 @@ mat-card-header {
 }
 
 button.full-width {
-  width: 100%;
+  width: 65%;
   display: flex;
   align-items: center; /* Centra el ícono verticalmente con el texto */
   justify-content: center;
-  gap: 8px;
+  margin-bottom: 10px;
+  gap: 4px;
 }
 
 mat-card-actions {
@@ -33,9 +35,9 @@ mat-card-actions {
   padding: 16px;
 }
 
-mat-card img.mat-card-image {
-  max-height: 250px;
-  width: auto;
+mat-card img{
+  max-height: 200px;
+  width: 200;
   margin: 0 auto;
   display: block;
 }

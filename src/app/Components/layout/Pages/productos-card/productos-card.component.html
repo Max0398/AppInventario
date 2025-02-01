@@ -34,7 +34,7 @@
     <mat-card-header>
       <mat-card-title>{{ product.name }}</mat-card-title>
     </mat-card-header>
-    <img mat-card-image [src]="'https://walmartni.vtexassets.com/arquivos/ids/329547/Gaseosa-Coca-Cola-regular-1-L-2-7639.jpg?v=638392774007500000'" alt="Product image" />
+    <img [src]="product.image_path" alt="{{ product.name }}" *ngIf="product.image_path" >
     <mat-card-content>
       <p>Precio: {{ product.price | currency }}</p>
       <p>{{ product.description }}</p>
