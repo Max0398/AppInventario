@@ -1,0 +1,60 @@
+<!-- Filtros -->
+<div class="filtros">
+  <!-- Barra de búsqueda -->
+  <mat-form-field appearance="outline" class="search-bar">
+    <mat-label>Buscar producto</mat-label>
+    <input
+      matInput
+      [(ngModel)]="searchText"
+      (input)="aplicarFiltros()"
+      placeholder="Escribe el nombre del producto"
+    />
+    <mat-icon matSuffix>search</mat-icon>
+  </mat-form-field>
+
+  <!-- Filtro por categoría -->
+  <mat-form-field appearance="outline" class="category-filter">
+    <mat-label>Categoría</mat-label>
+    <mat-select [(ngModel)]="selectedCategory" (selectionChange)="aplicarFiltros()">
+      <mat-option value="">Todas las categorías</mat-option>
+      <mat-option *ngFor="let category of categories" [value]="category.name">
+        {{ category.name }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<!-- Lista de productos filtrados y paginados -->
+<div class="contenedor">
+  <mat-card
+    class="Product-card"
+    appearance="outlined"
+    *ngFor="let product of pagedProducts"
+  >
+    <mat-card-header>
+      <mat-card-title>{{ product.name }}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image [src]="'https://walmartni.vtexassets.com/arquivos/ids/329547/Gaseosa-Coca-Cola-regular-1-L-2-7639.jpg?v=638392774007500000'" alt="Product image" />
+    <mat-card-content>
+      <p>Precio: {{ product.price | currency }}</p>
+      <p>{{ product.description }}</p>
+      <p>Stock: {{ product.stock }}</p>
+      <p>Activo: {{ product.active ? 'Sí' : 'No' }}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button class="full-width" mat-raised-button color="primary" type="submit">
+        Agregar Al Carrito
+        <mat-icon>shopping_cart</mat-icon>
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
+<!-- Paginación -->
+<mat-paginator
+  [length]="filteredProducts.length"
+  [pageSize]="pageSize"
+  [pageSizeOptions]="[8, 16, 24]"
+  (page)="onPageChange($event)"
+>
+</mat-paginator>

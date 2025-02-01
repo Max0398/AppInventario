@@ -1,0 +1,58 @@
+mat-card-header {
+  display: flex;
+  justify-content: center;
+}
+
+.Product-card {
+  max-width: 400px;
+}
+/*
+.Product-card {
+  width: 100%;
+}
+*/
+
+.contenedor {
+  margin: 10px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px; /* Espacio entre las tarjetas */
+}
+
+button.full-width {
+  width: 100%;
+  display: flex;
+  align-items: center; /* Centra el ícono verticalmente con el texto */
+  justify-content: center;
+  gap: 8px;
+}
+
+mat-card-actions {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+}
+
+mat-card img.mat-card-image {
+  max-height: 250px;
+  width: auto;
+  margin: 0 auto;
+  display: block;
+}
+.filtros {
+  display: flex;
+  gap: 16px;
+  margin: 20px;
+  align-items: center;
+}
+
+.search-bar,
+.category-filter {
+  flex: 1;
+}
+
+
+mat-paginator {
+  margin: 20px;
+}
+

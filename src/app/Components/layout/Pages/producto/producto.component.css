@@ -1,0 +1,45 @@
+table{
+    width:100%;
+}
+
+mat-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+
+.stock-box {
+  display: inline-block;
+  min-width: 40px; 
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+.text{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 550;
+}
+
+.low_stock{
+  color:red
+}
+.medium_stock{
+  color:gray;
+}
+
+.rojo {
+  background-color: red;
+  color: white;
+}
+
+.gris {
+  background-color: gray;
+  color: white;
+}
+
+.verde {
+  background-color: green;
+  color: white;
+}
+

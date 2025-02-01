@@ -1,0 +1,22 @@
+.campos-formulario
+{
+  display: flex;
+  align-items: flex-start;
+}
+
+table{
+  width: 100%;
+}
+
+/* Contenedor flexible para los campos de búsqueda */
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-filter {
+  width: 400px;
+}
+

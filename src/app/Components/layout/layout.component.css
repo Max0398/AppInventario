@@ -1,0 +1,15 @@
+/* Estilos personalizados para los SnackBars */
+.snackbar-exito {
+  background-color: #4caf50; /* Verde para éxito */
+  color: white;
+}
+
+.snackbar-error {
+  background-color: #f44336; /* Rojo para errores */
+  color: white;
+}
+
+.snackbar-alerta {
+  background-color: #ff9800; /* Naranja para alertas */
+  color: white;
+}
