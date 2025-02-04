@@ -51,8 +51,6 @@ export class RegistroComponent implements OnInit {
   ngOnInit(): void {}
 
   registrarUsuario() {
-    this.mostrarLoading = true;
-
     const request: Registro = {
       name: this.formularioRegistro.value.name,
       email: this.formularioRegistro.value.email,

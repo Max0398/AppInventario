@@ -19,6 +19,13 @@
     <div class="mat-elevation-z2">
 
       <table mat-table [dataSource]="dataListaProductos">
+        <ng-container matColumnDef="Imagen">
+          <th mat-header-cell *matHeaderCellDef>Imagen</th>
+          <td class="text" mat-cell *matCellDef="let element">
+            <img [src]="element.image_path" class="mr-2" style="width: 50px; height: 50px; border-radius: 50%;" />
+          </td>
+        </ng-container>
+
 
 
         <ng-container matColumnDef="Nombre">
