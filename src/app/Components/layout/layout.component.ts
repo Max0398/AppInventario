@@ -8,6 +8,7 @@ import { MenuService } from 'src/app/Services/menu.service';
 import { UtilidadService } from 'src/app/Reutilizable/utilidad.service';
 
 
+
 @Component({
     selector: 'app-layout',
     templateUrl: './layout.component.html',
@@ -19,6 +20,7 @@ export class LayoutComponent {
   listaMenu:Menu[]=[];
   email:string="";
   rolUsuario:string="";
+  userAvatarUrl: string = 'assets/img/avatar.png';
 
 //Injectar dependencias
   constructor(
@@ -40,7 +42,6 @@ export class LayoutComponent {
           }
         },
         error:(e)=>{
-          console.log(usuario.id)
         }
       })
 

@@ -11,6 +11,7 @@ import { SharedModule } from './Reutilizable/shared/shared.module';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import {MatMenu, MatMenuTrigger} from "@angular/material/menu";
 
 
 
@@ -29,7 +30,9 @@ import { MatNativeDateModule } from '@angular/material/core';
     SharedModule,
     MatSnackBarModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatMenuTrigger,
+    MatMenu
   ],
   providers: [],
   bootstrap: [AppComponent]
