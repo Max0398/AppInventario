@@ -1,4 +1,4 @@
-.card
+.card,
 -info
 {
   width: 80%;
@@ -9,3 +9,16 @@ mat-icon{
   height: 50px !important;
   width: 50px !important;
 }
+
+
+@media (min-width: 720px) {
+  mat-grid-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: start ;
+    gap: 10px;
+  }
+}
+
+
+

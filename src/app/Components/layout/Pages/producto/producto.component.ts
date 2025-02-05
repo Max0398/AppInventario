@@ -20,7 +20,7 @@ import Swal from 'sweetalert2';
 //implementar Oninit,AfterViewInit
 export class ProductoComponent implements OnInit,AfterViewInit {
   //Variables Nesarias
-  columnasTabla:string[]=['Nombre','Categoria','Stock','Precio','Estado','Acciones'];
+  columnasTabla:string[]=['Imagen','Nombre','Categoria','Stock','Precio','Estado','Acciones'];
   dataInicio:Producto[]=[];
   dataListaProductos= new MatTableDataSource(this.dataInicio);
   @ViewChild(MatPaginator)paginacionTabla!:MatPaginator;

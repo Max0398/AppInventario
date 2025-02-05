@@ -37,13 +37,13 @@
     <img [src]="product.image_path" alt="{{ product.name }}" *ngIf="product.image_path" >
     <mat-card-content>
       <p>Precio: {{ product.price | currency }}</p>
-      <p>{{ product.description }}</p>
+      <p>Categoria: {{ product.description }}</p>
       <p>Stock: {{ product.stock }}</p>
       <p>Activo: {{ product.active ? 'Sí' : 'No' }}</p>
     </mat-card-content>
     <mat-card-actions>
       <button class="full-width" mat-raised-button color="primary" type="submit">
-        Agregar Al Carrito
+        Agregar
         <mat-icon>shopping_cart</mat-icon>
       </button>
     </mat-card-actions>

@@ -13,3 +13,38 @@
   background-color: #ff9800; /* Naranja para alertas */
   color: white;
 }
+
+.avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  object-fit: cover;
+  margin-right: 40px;
+}
+
+.menu-content {
+  padding: 16px;
+  text-align: center;
+  min-width: 180px;
+  min-height:180px ;
+  height: auto;
+  align-content: center;
+  border-radius: 10px;
+
+  color: black;
+}
+
+
+.logout-btn {
+  width: 100%;
+  text-align: left;
+  background-color: #4caf50;
+  color: white;
+}
+
+
+
+
+
+

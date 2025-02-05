@@ -12,7 +12,7 @@ import { UtilidadService } from 'src/app/Reutilizable/utilidad.service';
 
 @Component({
   selector: 'app-historial-venta',
-  templateUrl: './historial-venta.component.html',
+  templateUrl:'./historial-venta.component.html',
   styleUrls: ['./historial-venta.component.css'],
   standalone: false,
   providers: []
@@ -23,6 +23,7 @@ export class HistorialVentaComponent implements OnInit, AfterViewInit {
   columnasTabla: string[] = ['order_date', 'customer_name', 'total', 'status', 'Accion'];
   dataInicio: Venta[] = [];
   datosListaVenta = new MatTableDataSource(this.dataInicio);
+
 
   @ViewChild(MatPaginator) paginacionTabla!: MatPaginator;
 
