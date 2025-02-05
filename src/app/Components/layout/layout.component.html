@@ -1,7 +1,7 @@
 
-<mat-toolbar color="primary">
+<mat-toolbar style="background-color: #475294; color:white;">
 <mat-toolbar-row>
-    <h1>SistemaVenta</h1>
+    <h1>Sistema</h1>
     <button mat-icon-button (click)="sidenav.toggle();">
         <mat-icon>menu</mat-icon>
     </button>
@@ -20,12 +20,12 @@
 
 
 <mat-sidenav-container>
-    <mat-sidenav #sidenav opened="true" mode="side" style="width:200px;">
+    <mat-sidenav #sidenav opened="true" mode="side" style="width:200px; background-color: #475294">
       <mat-nav-list>
 
           <mat-list-item *ngFor="let menu of listaMenu" [routerLink]="menu.url">
-            <mat-icon matListItemIcon>{{menu.icono}}</mat-icon>
-            <div mat-line>{{menu.nombre}}</div>
+            <mat-icon style="color: white" matListItemIcon>{{menu.icono}}</mat-icon>
+            <div style="color: white" mat-line>{{menu.nombre}}</div>
           </mat-list-item>
 
       </mat-nav-list>
@@ -33,7 +33,7 @@
     </mat-sidenav>
 
     <mat-sidenav-content>
-      <div style="height: 90vh;">
+      <div style="height: 92vh;">
         <router-outlet></router-outlet>
       </div>
     </mat-sidenav-content>

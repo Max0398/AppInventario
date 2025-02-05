@@ -16,7 +16,7 @@
       <input matInput (keyup)="apilcarFiltrosTabla($event)" #input />
     </mat-form-field>
 
-    <div class="mat-elevation-z2">
+    <div class="mat-elevation-z2 table-size">
 
       <table mat-table [dataSource]="dataListaUsuarios">
 
@@ -55,7 +55,7 @@
         <tr mat-header-row *matHeaderRowDef="columnasTabla"></tr>
         <tr mat-row *matRowDef="let row; columns:columnasTabla"></tr>
 
-        <tr class="mat-row" *matNoDataRow="">
+        <tr class="mat-row" *matNoDataRow>
             <td class="mat-cell" colspan="4">No Hay Datos que coincidan con el filtro"{{input.value}}"</td>
         </tr>
 

@@ -1,8 +1,8 @@
-<h1 style="margin: 20px 0px 0px 40px">Productos</h1>
+<h1 style="margin: 20px 0 0 40px">Productos</h1>
 
-<mat-card style="margin: 20px 40px 40px 40px">
+<mat-card style="margin: 20px 40px 40px 40px;">
   <mat-card-title>
-    <button mat-raised-button color="primary" (click)="nuevoProducto()" style="margin:5px 0px 5px 5px;">
+    <button mat-raised-button color="primary" (click)="nuevoProducto()" style="margin:5px 0 5px 5px;">
       <mat-icon mat-list-icon>add</mat-icon>NuevoProducto
     </button>
   </mat-card-title>
@@ -16,9 +16,9 @@
       <input matInput (keyup)="apilcarFiltrosTabla($event)" #input />
     </mat-form-field>
 
-    <div class="mat-elevation-z2">
+    <div class="mat-elevation-z2 table-size" >
 
-      <table mat-table [dataSource]="dataListaProductos">
+      <table mat-table [dataSource]="dataListaProductos" >
         <ng-container matColumnDef="Imagen">
           <th mat-header-cell *matHeaderCellDef>Imagen</th>
           <td class="text" mat-cell *matCellDef="let element">
@@ -68,7 +68,7 @@
         <tr mat-header-row *matHeaderRowDef="columnasTabla"></tr>
         <tr mat-row *matRowDef="let row; columns:columnasTabla"></tr>
 
-        <tr class="mat-row" *matNoDataRow="">
+        <tr class="mat-row" *matNoDataRow>
             <td class="mat-cell" colspan="4">No Hay Datos que coincidan con el filtro"{{input.value}}"</td>
         </tr>
 
@@ -76,7 +76,6 @@
 
       <mat-paginator [pageSizeOptions]="[5,10,20]" showFirstLastButtons>
       </mat-paginator>
-
     </div>
   </mat-card-content>
 </mat-card>
