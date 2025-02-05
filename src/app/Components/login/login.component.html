@@ -1,18 +1,18 @@
 <div class="body">
   <mat-card class="loginCard">
-    <div class="header">
+    <mat-card-title class="header">
       <h2>Login</h2>
-    </div>
+    </mat-card-title>
 
     <mat-card-content style="padding-bottom: 15px">
       <form [formGroup]="formularioLogin" (ngSubmit)="iniciarSesion()">
-        <mat-form-field class="full-width" appearance="outline">
+        <mat-form-field class="full-width" appearance="fill">
           <mat-label>Email</mat-label>
           <input formControlName="email" matInput autocomplete="off" />
           <mat-icon matSuffix>mail</mat-icon>
         </mat-form-field>
 
-        <mat-form-field class="full-width" appearance="outline">
+        <mat-form-field class="full-width" appearance="fill">
           <mat-label>Contraseña</mat-label>
           <input
             [type]="ocultarPassword ? 'password' : 'text'"

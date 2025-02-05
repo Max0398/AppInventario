@@ -3,17 +3,26 @@
     justify-content: center;
     height: 100%;
     align-items: center;
-    background-color: #F5F5F5;
+    background-color: #f7f7f7;
 }
 
 .loginCard{
     max-width: 328px !important;
     margin: 2em auto;
     text-align: center;
-    max-height: 600px;
+    max-height: 800px;
+    background-color: #dcdbdb;
+    border-radius: 15px;
+}
+.loginCard:hover {
+    background-color: rgb(194, 228, 238);
 }
 .header{
+    margin: 20px auto;
     text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .full-width{
     width: 80%;
